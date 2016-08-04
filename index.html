@@ -5,57 +5,93 @@
 		<title></title>
 
 		<meta name="description" content="Webpage">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		
 		<link href="stylesheet.css" rel="stylesheet">
 
 		<script src="jquery.min.js"></script>
 		<script src="script.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</head>
 	
 	<body>
-		<p> buy some dam fruit</p>
-		<h1>Total Cash: <span class ="total-cash"></span></h1>
+<div class="">
+	<h1 class="text-primary page-header text-center "> Buy Some Dam Fruit</h1>
+	<h2 class="text-primary text-center">Total Cash: <span class=" glyphicon glyphicon-usd text-success total-cash"></span></h2>
+</div>
 
-		<div class="container">
-
-			<div class="apple">
-			<img src="images/apple.jpeg" alt="apple">
-			<h1>Price: <span id="apple-price"></span></h1>
+<div class="container">
+	
+	<section class="col-md-3 col-sm-6 apple">
+		<div class="thumbnail">
+		<img src="images/apple.jpeg" class="img-thumbnail" style="height:15em; width: 15em; " alt="apple">
+		<div class="caption">
+			<h1 class="text-primary">Price: <span class=" glyphicon glyphicon-usd text-success" id="apple-price"></span></h1>
 				<div class="price-button">
-					<button class="apple-buy">Buy</button>
-					<button class="apple-sell">Sell</button>
+					<button class="btn btn-default btn-lg apple-buy">Buy <span class="glyphicon glyphicon-plus-sign"></span>
+					</button>
+					<button class="btn btn-default btn-lg apple-sell">Sell <span class="glyphicon glyphicon-minus-sign"></span>
+					</button>
 				</div>
-			</div>
+		</div>	<!-- caption -->
+		</div> <!-- thumbnail -->
+	</section> <!-- apple -->
 
-			<div class="banana">
-			<img src="images/banana.jpeg" alt="banna">
-			<h1>Price: <span id="banana-price"></span></h1>
+	<section class="col-md-3 col-sm-6 banana">
+		<div class="thumbnail">
+		<img src="images/banana.jpeg" class="img-thumbnail" style="height:15em; width: 15em; " alt="banna">
+		<div class="caption">
+			<h1 class="text-primary" >Price: <span class=" glyphicon glyphicon-usd text-success" id="banana-price"></span></h1>
 				<div class="price-button">
-					<button class="banana-buy">Buy</button>
-					<button class="banana-sell">Sell</button>
+					<button class="btn btn-default btn-lg banana-buy">Buy <span class="glyphicon glyphicon-plus-sign"></span>
+					</button>
+					<button class="btn btn-default btn-lg banana-sell">Sell <span class="glyphicon glyphicon-minus-sign"></span>
+					</button>
 				</div>
-			</div>
+		</div>	<!-- caption -->
+		</div> <!-- thumbnail -->
+	</section> <!-- banana -->
 
-			<div class="orange">
-			<img src="images/orange.jpeg" alt="orange">
-			<h1>Price: <span id="orange-price"></span></h1>
+	<section class="col-md-3 col-sm-6 orange">
+		<div class="thumbnail">
+		<img src="images/orange.jpeg" class="img-thumbnail" style="height:15em; width: 15em; " alt="orange">
+		<div class="caption">
+			<h1 class="text-primary" >Price: <span class=" glyphicon glyphicon-usd text-success" id="orange-price"></span></h1>
 				<div class="price-button">
-					<button class="orange-buy">Buy</button>
-					<button class="orange-sell">Sell</button>
+					<button class="btn btn-default btn-lg orange-buy">Buy <span class="glyphicon glyphicon-plus-sign"></span>
+					</button>
+					<button class="btn btn-default btn-lg orange-sell">Sell <span class="glyphicon glyphicon-minus-sign"></span>
+					</button>
 				</div>
-			</div>
+		</div>	<!-- caption -->
+		</div> <!-- thumbnail -->
+	</section> <!-- orange -->
 
-			<div class="grape"><img src="images/grape.jpeg" alt="grape">
-			<h1>Price: <span id="grape-price"></span></h1>
+	<section class="col-md-3 col-sm-6 grape">
+		<div class="thumbnail">
+		<img src="images/grape.jpeg" class="img-thumbnail" style="height:15em; width: 15em; " alt="grape">
+		<div class="caption">
+			<h1 class="text-primary" >Price: <span class=" glyphicon glyphicon-usd text-success" id="grape-price"></span></h1>
 				<div class="price-button">
-					<button class="grape-buy">Buy</button>
-					<button class="grape-sell">Sell</button>
-				</div>	
-			</div>
+					<button class="btn btn-default btn-lg grape-buy">Buy <span class="glyphicon glyphicon-plus-sign"></span>
+					</button>
+					<button class="btn btn-default btn-lg grape-sell">Sell <span class="glyphicon glyphicon-minus-sign"></span>
+					</button>
+				</div>
+		</div>	<!-- caption -->	
+		</div> <!-- thumbnail -->
+	</section> <!-- grape -->
 
-			<div class="basket">
-				
-			</div>
-		</div>
+	<div class="basket">
+		
+	</div> <!-- basket -->
+</div> <!-- container -->
 
 
 
