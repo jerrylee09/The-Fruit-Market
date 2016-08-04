@@ -11,6 +11,12 @@ $(document).ready(function() {
 
 var fruitPrices = [1,1,1,1];
 var fruitTimes = [0,0,0,0];
+
+var apple =	$('#apple-price').text(fruitPrices[0]);
+var banana = $('#banana-price').text(fruitPrices[1]);
+var orange = $('#orange-price').text(fruitPrices[2]);
+var grape =	$('#grape-price').text(fruitPrices[3]);
+
 $(".total-cash").text(customer.totalCash);
 
 
@@ -63,18 +69,17 @@ function priceSet(){
 
 
 
-$('#apple-price').text(fruitPrices[0]);
-	$('#banana-price').text(fruitPrices[1]);
-	$('#orange-price').text(fruitPrices[2]);
-	$('#grape-price').text(fruitPrices[3]);
+
+
 setInterval(function(){ 
 	priceChange();
 	priceSet();
-	$('#apple-price').text(fruitPrices[0]);
-	$('#banana-price').text(fruitPrices[1]);
-	$('#orange-price').text(fruitPrices[2]);
-	$('#grape-price').text(fruitPrices[3]);
-	
+
+ 	apple.text(fruitPrices[0].toFixed(2));
+ 	banana.text(fruitPrices[1].toFixed(2));
+	orange.text(fruitPrices[2].toFixed(2));
+	grape.text(fruitPrices[3].toFixed(2));
+
  }, 3000);
 
 function randomNumber(min, max) {
