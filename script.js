@@ -157,10 +157,10 @@ if(fruitPrices[0] < 0.50) {
 	orangePrice.text(fruitPrices[2].toFixed(2));
 	grapePrice.text(fruitPrices[3].toFixed(2));
 
- }, 100);
+ }, 15000);
 }
 
-//timerSet();
+timerSet();
 
 
 // setInterval(function(){ 
